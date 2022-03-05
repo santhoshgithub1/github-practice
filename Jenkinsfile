@@ -15,12 +15,14 @@ pipeline {
                     }
                 }
             }
-            stage ('deploy') {
-                steps {
-                    sh 'echo "running deploy"'
-                }
-        
-            }
-        } 
+
+        }
+
+             
     }
-}
+    stage ('deploy'){
+        steps {
+            sh 'echo "deploy stage"'
+        }
+    }
+}           
