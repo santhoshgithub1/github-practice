@@ -5,7 +5,7 @@ pipeline {
             parallel {
                 stage ('build'){
                     steps {
-                        sh 'echo"running build"'
+                        sh 'echo "running build"'
                     }
 
                 }
