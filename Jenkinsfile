@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'master'}
+    agent {label ''}
     stages{
         stage ('build and test'){
             parallel {
@@ -19,10 +19,5 @@ pipeline {
         }
 
              
-    }
-    stage ('deploy'){
-        steps {
-            sh 'echo "deploy stage"'
-        }
     }
 }           
